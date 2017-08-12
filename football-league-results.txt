@@ -1,0 +1,11 @@
+       Team                 P     W    L   D    F      A     Pts
+    1. Kano Pillars         38    26   9   3    79  -  36    87
+    2. Enyimba Aba          38    24   8   6    67  -  30    80
+    3. Warri Wolves         38    24   5   9    87  -  45    77
+    4. Lobi Stars           38    21   8   9    74  -  52    71
+    5. Enugu Rangers        38    18  12   8    53  -  37    66
+    6. Nasarawa United      38    17  13   8    66  -  38    64
+   -------------------------------------------------------
+    7. El-Kanemi Warriors   38    15   8  15    48  -  57    53
+    8. Port Harcourt Sharks 38    12  14  12    46  -  47    50
+
