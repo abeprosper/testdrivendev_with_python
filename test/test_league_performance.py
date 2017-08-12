@@ -12,3 +12,16 @@ class TddLeastGoalPerformer(unittest.TestCase):
 		result = inputFilename.confirmFileIntergrity('football-league-results.txt')
 		self.assertEqual('football-league-results.txt', result)
 		pass
+
+
+
+
+
+
+
+
+
+
+
+if __name__ == '__main__':
+    unittest.main()
