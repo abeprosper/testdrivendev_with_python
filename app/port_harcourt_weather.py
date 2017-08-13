@@ -12,7 +12,8 @@ class SmallestTemperatureSpread(object):
 			raise ValueError
 		pass
 
-
+	def weatherLists(self,filename):
+		pass
 
 
 
