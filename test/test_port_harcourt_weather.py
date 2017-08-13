@@ -12,3 +12,7 @@ class TddSmallestTemperatureSpread(unittest.TestCase):
 		result = inputFilename.confirmFileIntergrity('port-harcourt-weather.txt')
 		self.assertEqual('port-harcourt-weather.txt', result)
 		pass
+
+	def test__return_exception_if_file_extension_not_txt(self):
+		self.assertRaises(ValueError, self.inputFilename.confirmFileIntergrity, 'port-harcourt-weather')
+		pass
