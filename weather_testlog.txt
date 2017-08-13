@@ -40,3 +40,20 @@ test__return_inputFileIntegrity (test.test_port_harcourt_weather.TddSmallestTemp
 Ran 2 tests in 0.001s
 
 OK
+
+test__return_error_if_resultfile_empty (test.test_port_harcourt_weather.TddSmallestTemperatureSpread) ... FAIL
+test__return_exception_if_file_extension_not_txt (test.test_port_harcourt_weather.TddSmallestTemperatureSpread) ... ok
+test__return_inputFileIntegrity (test.test_port_harcourt_weather.TddSmallestTemperatureSpread) ... ok
+
+======================================================================
+FAIL: test__return_error_if_resultfile_empty (test.test_port_harcourt_weather.TddSmallestTemperatureSpread)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/mosud/Desktop/SWESkills/tdd_basic_TestDrivenDevelopment/test/test_port_harcourt_weather.py", line 21, in test__return_error_if_resultfile_empty
+    self.assertRaises(ValueError, self.inputFilename.confirmFileIntergrity, 'zerofile-port-harcourt-weather.txt')
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+FAILED (failures=1)
