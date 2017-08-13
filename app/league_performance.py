@@ -56,3 +56,6 @@ class LeastGoalPerformer(object):
 			#print goalDifList
 			return goalDifList
 		pass
+
+	def goalPerformance(self, filename):
+		pass
