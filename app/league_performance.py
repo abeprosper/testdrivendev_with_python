@@ -10,4 +10,6 @@ class LeastGoalPerformer(object):
 		else:
 			raise ValueError
 		pass
-		
+
+	def leagueClubNameList(self, filename):
+		pass

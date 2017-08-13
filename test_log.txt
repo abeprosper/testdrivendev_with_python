@@ -80,3 +80,20 @@ test__return_inputFileIntegrity (test.test_league_performance.TddLeastGoalPerfor
 Ran 3 tests in 0.002s
 
 OK
+test__return_error_if_resultfile_empty (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_error_if_resultfile_iteration_can_not_produce_to_team_list (test.test_league_performance.TddLeastGoalPerformer) ... FAIL
+test__return_exception_if_file_extension_not_txt (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_inputFileIntegrity (test.test_league_performance.TddLeastGoalPerformer) ... ok
+
+======================================================================
+FAIL: test__return_error_if_resultfile_iteration_can_not_produce_to_team_list (test.test_league_performance.TddLeastGoalPerformer)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/mosud/Desktop/SWESkills/tdd_basic_TestDrivenDevelopment/test/test_league_performance.py", line 27, in test__return_error_if_resultfile_iteration_can_not_produce_to_team_list
+    self.assertIsInstance(leagueClubNameList, list)
+AssertionError: None is not an instance of <type 'list'>
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.002s
+
+FAILED (failures=1)
