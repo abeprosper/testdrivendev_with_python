@@ -35,3 +35,6 @@ class LeastGoalPerformer(object):
 			#print leagueClubNameList
 			return leagueClubNameList
 		pass
+
+	def goalDifList(self, filename):
+		pass

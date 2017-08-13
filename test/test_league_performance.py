@@ -27,6 +27,12 @@ class TddLeastGoalPerformer(unittest.TestCase):
 		self.assertIsInstance(leagueClubNameList, list)
 		pass
 
+	def test__return_error_if_resultfile_iteration_can_not_produce_to_league_team_goalDifference_list(self):
+		inputFilename = LeastGoalPerformer()
+		goalDifList = inputFilename.goalDifList('football-league-results.txt')
+		self.assertIsInstance(goalDifList, list)
+		pass
+
 
 
 
