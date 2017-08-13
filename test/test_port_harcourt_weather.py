@@ -24,5 +24,6 @@ class TddSmallestTemperatureSpread(unittest.TestCase):
 	def test__return_error_if_resultfile_iteration_can_not_produce_to_team_list(self):
 		inputFilename = SmallestTemperatureSpread()
 		dailyList = inputFilename.weatherLists('port-harcourt-weather.txt')
+		dailyList = list(dailyList)
 		self.assertIsInstance(dailyList, list)
 		pass
