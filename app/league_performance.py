@@ -75,5 +75,3 @@ class LeastGoalPerformer(object):
 		return LeastGoalDiff
 		pass
 
-	def LeastGoalDiffTeamName(sef, filename):
-		pass
