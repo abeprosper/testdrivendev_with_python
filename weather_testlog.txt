@@ -57,3 +57,11 @@ AssertionError: ValueError not raised
 Ran 3 tests in 0.001s
 
 FAILED (failures=1)
+test__return_error_if_resultfile_empty (test.test_port_harcourt_weather.TddSmallestTemperatureSpread) ... ok
+test__return_exception_if_file_extension_not_txt (test.test_port_harcourt_weather.TddSmallestTemperatureSpread) ... ok
+test__return_inputFileIntegrity (test.test_port_harcourt_weather.TddSmallestTemperatureSpread) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK
