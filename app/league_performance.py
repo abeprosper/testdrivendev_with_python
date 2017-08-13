@@ -58,4 +58,11 @@ class LeastGoalPerformer(object):
 		pass
 
 	def goalPerformance(self, filename):
+		leagueClubNameList = LeastGoalPerformer() 	#Mosudi: Calling the class
+		goalDifList = LeastGoalPerformer()			#Mosudi: Calling the class
+		leagueClubNameList = leagueClubNameList.leagueClubNameList(filename) 	#Mosudi: Fetching dictionary keys
+		goalDifList = goalDifList.goalDifList(filename)							#Mosudi: Fetching dictionary values
+		goalPerformance = dict(zip(leagueClubNameList, goalDifList)) #Mosudi: Create a dictionary of club name and corresponding goal difference
+		#print goalPerformance
+		return goalPerformance
 		pass
