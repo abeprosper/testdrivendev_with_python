@@ -18,7 +18,7 @@ class TddLeastGoalPerformer(unittest.TestCase):
 		pass
 
 	def test__return_error_if_resultfile_empty(self): # touch zerofile-football-league-result.txt
-		self.assertRaises(ValueError, self.inputFilename.resultFilename, 'zerofile-football-league-result.txt')
+		self.assertRaises(ValueError, self.inputFilename.confirmFileIntergrity, 'zerofile-football-league-result.txt')
 		pass
 
 
