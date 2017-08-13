@@ -68,9 +68,12 @@ class LeastGoalPerformer(object):
 		pass
 
 	def LeastGoalDiffTeam(sef, filename):
-		goalPerformance = LeastGoalPerformer()
-		goalPerformance = goalPerformance.goalPerformance(filename)
-		LeastGoalDiff = min(sorted(goalPerformance.values()))
+		goalPerformance = LeastGoalPerformer()							#Mosudi: Calling the class
+		goalPerformance = goalPerformance.goalPerformance(filename)		#Mosudi: Fetching dictionary
+		LeastGoalDiff = min(sorted(goalPerformance.values()))			#Mosudi: Manipulation the dictionary for minimum vale
 		#print LeastGoalDiff
 		return LeastGoalDiff
+		pass
+
+	def LeastGoalDiffTeamName(sef, filename):
 		pass
