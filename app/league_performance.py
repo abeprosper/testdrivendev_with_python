@@ -37,4 +37,22 @@ class LeastGoalPerformer(object):
 		pass
 
 	def goalDifList(self, filename):
+		with open(filename) as leagueResult:
+			goalDifList = []	#Mosudi: Initialise list for league team goal difference
+			leagueResult.next() #Mosudi : Skiiping the 1st lines from the iteration procedure.
+			for line in leagueResult: #Mosudi: Iterating over  each line.
+				teamDataList = [] #Mosudi: Initialise list to collate data for each team. 
+				line = line.split() #Mosudi: Making list out of "words" seperated by white space on each line.
+				for leagueData in line: #Mosudi: Iterate life for each line for club names(string) and data(int)
+					try:
+						leagueData = int(leagueData) #Mosudi: League data
+						teamDataList.append(leagueData) #Mosudi:
+					except ValueError:
+						pass
+				if len(teamDataList) > 0 : #Mosudi: Iteration over the two lists(teamDataList and leagueClubList) while skipping empty lists create out of blank line
+					goalFor = int(teamDataList[4]) #Mosudi: Extracting target data: Goal For
+					goalAgainst = int(teamDataList[5]) #Mosudi: Extracting target data: Goal Against
+					goalDifList.append(goalFor - goalAgainst) #Mosudi: Add goal difference to goalDifList			#print leagueClubNameList
+			#print goalDifList
+			return goalDifList
 		pass
