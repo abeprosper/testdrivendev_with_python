@@ -6,8 +6,10 @@ class SmallestTemperatureSpread(object):
 
 
 	def confirmFileIntergrity(self, filename):
-		if os.path.isfile(filename):
+		if filename.endswith('.txt') and os.path.isfile(filename):
 			return filename
+		else:
+			raise ValueError
 		pass
 
 
