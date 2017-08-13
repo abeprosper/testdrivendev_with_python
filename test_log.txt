@@ -164,3 +164,23 @@ test__return_inputFileIntegrity (test.test_league_performance.TddLeastGoalPerfor
 Ran 6 tests in 0.003s
 
 OK
+test__confirm_if_resultfile_iteration_can_produce_league_team_Name_and_goalDifference_Dictionary (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_LeastGoalDiffTeam (test.test_league_performance.TddLeastGoalPerformer) ... FAIL
+test__return_error_if_resultfile_empty (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_error_if_resultfile_iteration_can_not_produce_to_league_team_goalDifference_list (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_error_if_resultfile_iteration_can_not_produce_to_team_list (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_exception_if_file_extension_not_txt (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_inputFileIntegrity (test.test_league_performance.TddLeastGoalPerformer) ... ok
+
+======================================================================
+FAIL: test__return_LeastGoalDiffTeam (test.test_league_performance.TddLeastGoalPerformer)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/mosud/Desktop/SWESkills/tdd_basic_TestDrivenDevelopment/test/test_league_performance.py", line 45, in test__return_LeastGoalDiffTeam
+    self.assertEqual(-9, leastGoalDiff)
+AssertionError: -9 != None
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.002s
+
+FAILED (failures=1)

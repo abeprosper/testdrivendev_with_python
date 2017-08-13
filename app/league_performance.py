@@ -6,7 +6,7 @@ class LeastGoalPerformer(object):
 
 	def confirmFileIntergrity(self, filename):
 		if  filename.endswith('.txt') and os.path.isfile(filename) and os.stat(filename).st_size > 0:
-			return filename
+			return filename 
 		else:
 			raise ValueError
 		pass
@@ -65,4 +65,7 @@ class LeastGoalPerformer(object):
 		goalPerformance = dict(zip(leagueClubNameList, goalDifList)) #Mosudi: Create a dictionary of club name and corresponding goal difference
 		#print goalPerformance
 		return goalPerformance
+		pass
+
+	def LeastGoalDiffTeam(sef, filename):
 		pass

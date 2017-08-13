@@ -39,6 +39,12 @@ class TddLeastGoalPerformer(unittest.TestCase):
 		self.assertIsInstance(goalPerformance, dict)
 		pass
 
+	def test__return_LeastGoalDiffTeam(self):
+		inputFilename = LeastGoalPerformer()
+		leastGoalDiff = inputFilename.LeastGoalDiffTeam('football-league-results.txt')
+		self.assertEqual(-9, leastGoalDiff)
+		pass
+
 
 
 
