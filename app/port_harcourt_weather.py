@@ -1,3 +1,4 @@
+import os
 class SmallestTemperatureSpread(object):
 	"""docstring for SmallestTemperatureSpread"""
 
@@ -5,6 +6,8 @@ class SmallestTemperatureSpread(object):
 
 
 	def confirmFileIntergrity(self, filename):
+		if os.path.isfile(filename):
+			return filename
 		pass
 
 
