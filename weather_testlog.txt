@@ -12,3 +12,9 @@ AssertionError: 'port-harcourt-weather.txt' != None
 Ran 1 test in 0.001s
 
 FAILED (failures=1)
+test__return_inputFileIntegrity (test.test_port_harcourt_weather.TddSmallestTemperatureSpread) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+OK
