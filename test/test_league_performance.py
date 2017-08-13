@@ -33,6 +33,12 @@ class TddLeastGoalPerformer(unittest.TestCase):
 		self.assertIsInstance(goalDifList, list)
 		pass
 
+	def test__confirm_if_resultfile_iteration_can_produce_league_team_Name_and_goalDifference_Dictionary(self):
+		inputFilename = LeastGoalPerformer()
+		goalPerformance = inputFilename.goalPerformance('football-league-results.txt')
+		self.assertIsInstance(goalPerformance, dict)
+		pass
+
 
 
 

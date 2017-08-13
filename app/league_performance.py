@@ -57,4 +57,5 @@ class LeastGoalPerformer(object):
 			return goalDifList
 		pass
 
-	
+	def goalPerformance(self, filename):
+		pass
