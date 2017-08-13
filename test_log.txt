@@ -33,3 +33,10 @@ AssertionError: ValueError not raised
 Ran 2 tests in 0.002s
 
 FAILED (failures=1)
+test__return_exception_if_file_extension_not_txt (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_inputFileIntegrity (test.test_league_performance.TddLeastGoalPerformer) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+OK
