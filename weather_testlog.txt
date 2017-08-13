@@ -18,3 +18,18 @@ test__return_inputFileIntegrity (test.test_port_harcourt_weather.TddSmallestTemp
 Ran 1 test in 0.001s
 
 OK
+test__return_exception_if_file_extension_not_txt (test.test_port_harcourt_weather.TddSmallestTemperatureSpread) ... FAIL
+test__return_inputFileIntegrity (test.test_port_harcourt_weather.TddSmallestTemperatureSpread) ... ok
+
+======================================================================
+FAIL: test__return_exception_if_file_extension_not_txt (test.test_port_harcourt_weather.TddSmallestTemperatureSpread)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/mosud/Desktop/SWESkills/tdd_basic_TestDrivenDevelopment/test/test_port_harcourt_weather.py", line 17, in test__return_exception_if_file_extension_not_txt
+    self.assertRaises(ValueError, self.inputFilename.confirmFileIntergrity, 'port-harcourt-weather')
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+FAILED (failures=1)
