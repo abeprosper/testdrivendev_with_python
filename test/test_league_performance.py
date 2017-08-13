@@ -21,6 +21,11 @@ class TddLeastGoalPerformer(unittest.TestCase):
 		self.assertRaises(ValueError, self.inputFilename.confirmFileIntergrity, 'zerofile-football-league-result.txt')
 		pass
 
+	def test__return_error_if_resultfile_iteration_can_not_produce_to_team_list(self):
+		inputFilename = LeastGoalPerformer()
+		leagueClubNameList = inputFilename.leagueClubNameList('football-league-results.txt')
+		self.assertIsInstance(leagueClubNameList, list)
+		pass
 
 
 
