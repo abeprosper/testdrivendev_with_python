@@ -68,4 +68,9 @@ class LeastGoalPerformer(object):
 		pass
 
 	def LeastGoalDiffTeam(sef, filename):
+		goalPerformance = LeastGoalPerformer()
+		goalPerformance = goalPerformance.goalPerformance(filename)
+		LeastGoalDiff = min(sorted(goalPerformance.values()))
+		#print LeastGoalDiff
+		return LeastGoalDiff
 		pass
