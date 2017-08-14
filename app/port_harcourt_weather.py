@@ -35,7 +35,7 @@ class SmallestTemperatureSpread(object):
 				dailyList.append(dayNum), dailyHighList.append(dailyHigh), dailyLowList.append(dailyLow), dailyTempSpread.append(dailyHigh - dailyLow)
 		weatherDict = dict(zip(dailyList, dailyTempSpread)) #Mosudi: Creating Dictionary
 		smallestTemperatureSpreadDay = min(weatherDict, key=weatherDict.get) #Mosudi: Iterate over the dictionary to get the key(day number) of min value(temp spread)
-		return dailyList #, dailyTempSpread, weatherDict, smallestTemperatureSpreadDay
+		return dailyList , dailyTempSpread#, weatherDict, smallestTemperatureSpreadDay
 		pass
 
 
