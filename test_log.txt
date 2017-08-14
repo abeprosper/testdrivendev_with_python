@@ -1,0 +1,232 @@
+test__return_inputFileIntegrity (test.test_league_performance.TddLeastGoalPerformer) ... FAIL
+
+======================================================================
+FAIL: test__return_inputFileIntegrity (test.test_league_performance.TddLeastGoalPerformer)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/mosud/Desktop/SWESkills/tdd_basic_TestDrivenDevelopment/test/test_league_performance.py", line 13, in test__return_inputFileIntegrity
+    self.assertEqual('football-league-results.txt', result)
+AssertionError: 'football-league-results.txt' != None
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (failures=1)
+test__return_inputFileIntegrity (test.test_league_performance.TddLeastGoalPerformer) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+OK
+test__return_exception_if_file_extension_not_txt (test.test_league_performance.TddLeastGoalPerformer) ... FAIL
+test__return_inputFileIntegrity (test.test_league_performance.TddLeastGoalPerformer) ... ok
+
+======================================================================
+FAIL: test__return_exception_if_file_extension_not_txt (test.test_league_performance.TddLeastGoalPerformer)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/mosud/Desktop/SWESkills/tdd_basic_TestDrivenDevelopment/test/test_league_performance.py", line 17, in test__return_exception_if_file_extension_not_txt
+    self.assertRaises(ValueError, self.inputFilename.confirmFileIntergrity, 'football-league-results')
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.002s
+
+FAILED (failures=1)
+test__return_exception_if_file_extension_not_txt (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_inputFileIntegrity (test.test_league_performance.TddLeastGoalPerformer) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+OK
+test__return_error_if_resultfile_empty (test.test_league_performance.TddLeastGoalPerformer) ... ERROR
+test__return_exception_if_file_extension_not_txt (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_inputFileIntegrity (test.test_league_performance.TddLeastGoalPerformer) ... ok
+
+======================================================================
+ERROR: test__return_error_if_resultfile_empty (test.test_league_performance.TddLeastGoalPerformer)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/mosud/Desktop/SWESkills/tdd_basic_TestDrivenDevelopment/test/test_league_performance.py", line 21, in test__return_error_if_resultfile_empty
+    self.assertRaises(ValueError, self.inputFilename.resultFilename, 'zerofile-football-league-result.txt')
+AttributeError: 'LeastGoalPerformer' object has no attribute 'resultFilename'
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+FAILED (errors=1)
+test__return_error_if_resultfile_empty (test.test_league_performance.TddLeastGoalPerformer) ... FAIL
+test__return_exception_if_file_extension_not_txt (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_inputFileIntegrity (test.test_league_performance.TddLeastGoalPerformer) ... ok
+
+======================================================================
+FAIL: test__return_error_if_resultfile_empty (test.test_league_performance.TddLeastGoalPerformer)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/mosud/Desktop/SWESkills/tdd_basic_TestDrivenDevelopment/test/test_league_performance.py", line 21, in test__return_error_if_resultfile_empty
+    self.assertRaises(ValueError, self.inputFilename.confirmFileIntergrity, 'zerofile-football-league-result.txt')
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+FAILED (failures=1)
+test__return_error_if_resultfile_empty (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_exception_if_file_extension_not_txt (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_inputFileIntegrity (test.test_league_performance.TddLeastGoalPerformer) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.002s
+
+OK
+test__return_error_if_resultfile_empty (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_error_if_resultfile_iteration_can_not_produce_to_team_list (test.test_league_performance.TddLeastGoalPerformer) ... FAIL
+test__return_exception_if_file_extension_not_txt (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_inputFileIntegrity (test.test_league_performance.TddLeastGoalPerformer) ... ok
+
+======================================================================
+FAIL: test__return_error_if_resultfile_iteration_can_not_produce_to_team_list (test.test_league_performance.TddLeastGoalPerformer)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/mosud/Desktop/SWESkills/tdd_basic_TestDrivenDevelopment/test/test_league_performance.py", line 27, in test__return_error_if_resultfile_iteration_can_not_produce_to_team_list
+    self.assertIsInstance(leagueClubNameList, list)
+AssertionError: None is not an instance of <type 'list'>
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.002s
+
+FAILED (failures=1)
+test__return_error_if_resultfile_empty (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_error_if_resultfile_iteration_can_not_produce_to_team_list (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_exception_if_file_extension_not_txt (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_inputFileIntegrity (test.test_league_performance.TddLeastGoalPerformer) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.002s
+
+OK
+test__return_error_if_resultfile_empty (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_error_if_resultfile_iteration_can_not_produce_to_league_team_goalDifference_list (test.test_league_performance.TddLeastGoalPerformer) ... FAIL
+test__return_error_if_resultfile_iteration_can_not_produce_to_team_list (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_exception_if_file_extension_not_txt (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_inputFileIntegrity (test.test_league_performance.TddLeastGoalPerformer) ... ok
+
+======================================================================
+FAIL: test__return_error_if_resultfile_iteration_can_not_produce_to_league_team_goalDifference_list (test.test_league_performance.TddLeastGoalPerformer)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/mosud/Desktop/SWESkills/tdd_basic_TestDrivenDevelopment/test/test_league_performance.py", line 33, in test__return_error_if_resultfile_iteration_can_not_produce_to_league_team_goalDifference_list
+    self.assertIsInstance(goalDifList, list)
+AssertionError: None is not an instance of <type 'list'>
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.002s
+
+FAILED (failures=1)
+test__return_error_if_resultfile_empty (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_error_if_resultfile_iteration_can_not_produce_to_league_team_goalDifference_list (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_error_if_resultfile_iteration_can_not_produce_to_team_list (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_exception_if_file_extension_not_txt (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_inputFileIntegrity (test.test_league_performance.TddLeastGoalPerformer) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+test__confirm_if_resultfile_iteration_can_produce_league_team_Name_and_goalDifference_Dictionary (test.test_league_performance.TddLeastGoalPerformer) ... FAIL
+test__return_error_if_resultfile_empty (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_error_if_resultfile_iteration_can_not_produce_to_league_team_goalDifference_list (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_error_if_resultfile_iteration_can_not_produce_to_team_list (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_exception_if_file_extension_not_txt (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_inputFileIntegrity (test.test_league_performance.TddLeastGoalPerformer) ... ok
+
+======================================================================
+FAIL: test__confirm_if_resultfile_iteration_can_produce_league_team_Name_and_goalDifference_Dictionary (test.test_league_performance.TddLeastGoalPerformer)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/mosud/Desktop/SWESkills/tdd_basic_TestDrivenDevelopment/test/test_league_performance.py", line 39, in test__confirm_if_resultfile_iteration_can_produce_league_team_Name_and_goalDifference_Dictionary
+    self.assertIsInstance(goalPerformance, dict)
+AssertionError: None is not an instance of <type 'dict'>
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.009s
+
+FAILED (failures=1)
+test__confirm_if_resultfile_iteration_can_produce_league_team_Name_and_goalDifference_Dictionary (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_error_if_resultfile_empty (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_error_if_resultfile_iteration_can_not_produce_to_league_team_goalDifference_list (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_error_if_resultfile_iteration_can_not_produce_to_team_list (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_exception_if_file_extension_not_txt (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_inputFileIntegrity (test.test_league_performance.TddLeastGoalPerformer) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.003s
+
+OK
+test__confirm_if_resultfile_iteration_can_produce_league_team_Name_and_goalDifference_Dictionary (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_LeastGoalDiffTeam (test.test_league_performance.TddLeastGoalPerformer) ... FAIL
+test__return_error_if_resultfile_empty (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_error_if_resultfile_iteration_can_not_produce_to_league_team_goalDifference_list (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_error_if_resultfile_iteration_can_not_produce_to_team_list (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_exception_if_file_extension_not_txt (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_inputFileIntegrity (test.test_league_performance.TddLeastGoalPerformer) ... ok
+
+======================================================================
+FAIL: test__return_LeastGoalDiffTeam (test.test_league_performance.TddLeastGoalPerformer)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/mosud/Desktop/SWESkills/tdd_basic_TestDrivenDevelopment/test/test_league_performance.py", line 45, in test__return_LeastGoalDiffTeam
+    self.assertEqual(-9, leastGoalDiff)
+AssertionError: -9 != None
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.002s
+
+FAILED (failures=1)
+test__confirm_if_resultfile_iteration_can_produce_league_team_Name_and_goalDifference_Dictionary (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_LeastGoalDiffTeam (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_error_if_resultfile_empty (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_error_if_resultfile_iteration_can_not_produce_to_league_team_goalDifference_list (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_error_if_resultfile_iteration_can_not_produce_to_team_list (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_exception_if_file_extension_not_txt (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_inputFileIntegrity (test.test_league_performance.TddLeastGoalPerformer) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.003s
+
+OK
+test__confirm_if_resultfile_iteration_can_produce_league_team_Name_and_goalDifference_Dictionary (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_LeastGoalDiffTeam (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_LeastGoalDiffTeamName (test.test_league_performance.TddLeastGoalPerformer) ... FAIL
+test__return_error_if_resultfile_empty (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_error_if_resultfile_iteration_can_not_produce_to_league_team_goalDifference_list (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_error_if_resultfile_iteration_can_not_produce_to_team_list (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_exception_if_file_extension_not_txt (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_inputFileIntegrity (test.test_league_performance.TddLeastGoalPerformer) ... ok
+
+======================================================================
+FAIL: test__return_LeastGoalDiffTeamName (test.test_league_performance.TddLeastGoalPerformer)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/mosud/Desktop/SWESkills/tdd_basic_TestDrivenDevelopment/test/test_league_performance.py", line 53, in test__return_LeastGoalDiffTeamName
+    self.assertEqual('El-Kanemi Warriors', LeastGoalDiffTeamName)
+AssertionError: 'El-Kanemi Warriors' != None
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.003s
+
+FAILED (failures=1)
+test__confirm_if_resultfile_iteration_can_produce_league_team_Name_and_goalDifference_Dictionary (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_LeastGoalDiffTeam (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_LeastGoalDiffTeamName (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_error_if_resultfile_empty (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_error_if_resultfile_iteration_can_not_produce_to_league_team_goalDifference_list (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_error_if_resultfile_iteration_can_not_produce_to_team_list (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_exception_if_file_extension_not_txt (test.test_league_performance.TddLeastGoalPerformer) ... ok
+test__return_inputFileIntegrity (test.test_league_performance.TddLeastGoalPerformer) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.003s
+
+OK
