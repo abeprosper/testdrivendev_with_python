@@ -19,6 +19,6 @@ nosetests -v -s test/test_port_harcourt_weather.py 2>> weather_testlog.txt
 
 
 
-Check for all release version
+Check for all release versions
 https://github.com/imosudi/tdd_basic_TestDrivenDevelopment-Football-League-results_and-Weather-data/releases
 
