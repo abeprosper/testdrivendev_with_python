@@ -49,3 +49,12 @@ class TddSmallestTemperatureSpread(unittest.TestCase):
 		smallestTemperatureSpread = int(smallestTemperatureSpread) # I have a tuple here, i.e multiple return items
 		self.assertEqual(2, smallestTemperatureSpread) # day 14 of the month(61 - 59 = 2 )
 		pass
+
+
+	def test__return_day_with_lowest_temp_spread(self):
+		inputFilename = SmallestTemperatureSpread()
+		dailyList, dailyTempSpread, weatherDict, smallestTemperatureSpread, smallestTemperatureSpreadDay = inputFilename.weatherLists('port-harcourt-weather.txt')
+		smallestTemperatureSpreadDay = int(smallestTemperatureSpreadDay) # I have a tuple here, i.e multiple return items
+		self.assertEqual(14, smallestTemperatureSpreadDay) # day 14 of the month(61 - 59 = 2 )
+		pass
+
