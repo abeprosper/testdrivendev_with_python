@@ -42,7 +42,6 @@ class SmallestTemperatureSpread(object):
 		pass
 
 
-
 class LeastGoalPerformer(object):
 	filename = 'football-league-results.txt'
 
