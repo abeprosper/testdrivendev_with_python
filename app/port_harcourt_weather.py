@@ -26,14 +26,16 @@ class SmallestTemperatureSpread(object):
 				#print line
 				line = line.split() #creating list for each line
 				#print line
-				try: #attempt to extract my relevant data, namely cols: 1,2 & 3
-					dayNum = int(line[0]) #avoid the last row starting with string "mo", even if the month is 31
-					dailyHigh = int(line[1])
-					dailyLow = int(line[2])
+				try: #Mosudi: attempt to extract my relevant data, namely cols: 1,2 & 3
+					dayNum = int(line[0]) #Mosudi: avoid the last row starting with string "mo", even if the month is 31
+					dailyHigh = int(line[1]) #Mosudi: second col
+					dailyLow = int(line[2])	  #Mosudi: third col
 				except ValueError:
 					pass
 				dailyList.append(dayNum), dailyHighList.append(dailyHigh), dailyLowList.append(dailyLow), dailyTempSpread.append(dailyHigh - dailyLow)
-		return dailyList , dailyTempSpread
+		weatherDict = dict(zip(dailyList, dailyTempSpread)) #Mosudi: Creating Dictionary
+		smallestTemperatureSpreadDay = min(weatherDict, key=weatherDict.get) #Mosudi: Iterate over the dictionary to get the key(day number) of min value(temp spread)
+		return dailyList #, dailyTempSpread, weatherDict, smallestTemperatureSpreadDay
 		pass
 
 
