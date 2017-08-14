@@ -92,3 +92,21 @@ test__return_inputFileIntegrity (test.test_port_harcourt_weather.TddSmallestTemp
 Ran 4 tests in 0.001s
 
 OK
+test__return_error_if_resultfile_empty (test.test_port_harcourt_weather.TddSmallestTemperatureSpread) ... ok
+test__return_error_if_resultfile_iteration_can_not_produce_dailyList_list (test.test_port_harcourt_weather.TddSmallestTemperatureSpread) ... ok
+test__return_error_if_resultfile_iteration_can_not_produce_dailyTempSpread_list (test.test_port_harcourt_weather.TddSmallestTemperatureSpread) ... ERROR
+test__return_exception_if_file_extension_not_txt (test.test_port_harcourt_weather.TddSmallestTemperatureSpread) ... ok
+test__return_inputFileIntegrity (test.test_port_harcourt_weather.TddSmallestTemperatureSpread) ... ok
+
+======================================================================
+ERROR: test__return_error_if_resultfile_iteration_can_not_produce_dailyTempSpread_list (test.test_port_harcourt_weather.TddSmallestTemperatureSpread)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/mosud/Desktop/SWESkills/tdd_basic_TestDrivenDevelopment/test/test_port_harcourt_weather.py", line 33, in test__return_error_if_resultfile_iteration_can_not_produce_dailyTempSpread_list
+    dailyList, dailyTempSpread = inputFilename.weatherLists('port-harcourt-weather.txt')
+ValueError: too many values to unpack
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.002s
+
+FAILED (errors=1)
