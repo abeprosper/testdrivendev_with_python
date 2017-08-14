@@ -1,4 +1,6 @@
 import os
+
+
 class SmallestTemperatureSpread(object):
 	"""docstring for SmallestTemperatureSpread"""
 
@@ -76,10 +78,8 @@ class LeastGoalPerformer(object):
 					goalDifList.append(goalFor - goalAgainst) #Mosudi: Add goal difference to goalDifList			#print leagueClubNameList
 					leagueClubName = ' '.join(leagueClubName) #Mosudi: Creating club name for each line
 					leagueClubNameList.append(leagueClubName) #Mosudi: Add club name to leagueClubNameList
-			#print leagueClubNameList, goalDifList
 			goalPerformance = dict(zip(leagueClubNameList, goalDifList)) #Mosudi: Create a dictionary of club name and corresponding goal difference
 			LeastGoalDiff = min(sorted(goalPerformance.values()))			#Mosudi: Manipulation the dictionary for minimum vale
 			LeastGoalDiffTeamName = min(goalPerformance, key=goalPerformance.get)			#Mosudi: Manipulation the dictionary for minimum vale
-			#print goalPerformance, LeastGoalDiff, LeastGoalDiffTeamName
 			return leagueClubNameList, goalDifList, goalPerformance, LeastGoalDiff, LeastGoalDiffTeamName
 		pass
