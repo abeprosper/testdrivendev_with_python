@@ -23,14 +23,14 @@ class TddSmallestTemperatureSpread(unittest.TestCase):
 
 	def test__return_error_if_weather_report_iteration_can_not_produce_dailyList_list(self):
 		inputFilename = SmallestTemperatureSpread()
-		dailyList, dailyTempSpread, weatherDict = inputFilename.weatherLists('port-harcourt-weather.txt')
+		dailyList, dailyTempSpread, weatherDict, smallestTemperatureSpread = inputFilename.weatherLists('port-harcourt-weather.txt')
 		dailyList = list(dailyList) # I have a tuple here, i.e multiple return items from my method
 		self.assertIsInstance(dailyList, list)
 		pass
 
 	def test__return_error_if_weather_report_iteration_can_not_produce_dailyTempSpread_list(self):
 		inputFilename = SmallestTemperatureSpread()
-		dailyList, dailyTempSpread, weatherDict = inputFilename.weatherLists('port-harcourt-weather.txt')
+		dailyList, dailyTempSpread, weatherDict, smallestTemperatureSpread = inputFilename.weatherLists('port-harcourt-weather.txt')
 		dailyTempSpread = list(dailyTempSpread) # I have a tuple here, i.e multiple return items
 		self.assertIsInstance(dailyTempSpread, list)
 		pass
@@ -38,7 +38,7 @@ class TddSmallestTemperatureSpread(unittest.TestCase):
 
 	def test__return_error_if_weather_report_iteration_can_not_produce_python_dictionary_of_day_and_temp_spread(self):
 		inputFilename = SmallestTemperatureSpread()
-		dailyList, dailyTempSpread, weatherDict = inputFilename.weatherLists('port-harcourt-weather.txt')
+		dailyList, dailyTempSpread, weatherDict, smallestTemperatureSpread = inputFilename.weatherLists('port-harcourt-weather.txt')
 		weatherDict = dict(weatherDict) # I have a tuple here, i.e multiple return items
 		self.assertIsInstance(weatherDict, dict)
 		pass

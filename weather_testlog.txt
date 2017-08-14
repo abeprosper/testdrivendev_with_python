@@ -160,3 +160,15 @@ ValueError: need more than 3 values to unpack
 Ran 7 tests in 0.003s
 
 FAILED (errors=1)
+test__return_error_if_weather_report_empty (test.test_port_harcourt_weather.TddSmallestTemperatureSpread) ... ok
+test__return_error_if_weather_report_iteration_can_not_produce_dailyList_list (test.test_port_harcourt_weather.TddSmallestTemperatureSpread) ... ok
+test__return_error_if_weather_report_iteration_can_not_produce_dailyTempSpread_list (test.test_port_harcourt_weather.TddSmallestTemperatureSpread) ... ok
+test__return_error_if_weather_report_iteration_can_not_produce_python_dictionary_of_day_and_temp_spread (test.test_port_harcourt_weather.TddSmallestTemperatureSpread) ... ok
+test__return_exception_if_file_extension_not_txt (test.test_port_harcourt_weather.TddSmallestTemperatureSpread) ... ok
+test__return_inputFileIntegrity (test.test_port_harcourt_weather.TddSmallestTemperatureSpread) ... ok
+test__return_lowest_temp_spread (test.test_port_harcourt_weather.TddSmallestTemperatureSpread) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.002s
+
+OK
