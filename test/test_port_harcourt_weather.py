@@ -21,9 +21,10 @@ class TddSmallestTemperatureSpread(unittest.TestCase):
 		self.assertRaises(ValueError, self.inputFilename.confirmFileIntergrity, 'zerofile-port-harcourt-weather.txt')
 		pass
 
-	def test__return_error_if_resultfile_iteration_can_not_produce_to_team_list(self):
+	def test__return_error_if_resultfile_iteration_can_not_produce_dailyList_list(self):
 		inputFilename = SmallestTemperatureSpread()
 		dailyList = inputFilename.weatherLists('port-harcourt-weather.txt')
-		dailyList = list(dailyList)
+		dailyList = list(dailyList) # I have a tuple here, i.e multiple return items from my method
 		self.assertIsInstance(dailyList, list)
 		pass
+
