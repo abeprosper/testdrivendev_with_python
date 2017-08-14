@@ -4,6 +4,8 @@ Two additional branches were created, namely
 coding_without_tdd;
 coding_with_tdd
 
+Initial attempt to write the applications was done without reference to Test Driven Development
+
 
 Kindly check the two log files(test_log.txt and weather_testlog.txt ) to view  nosetests log after each iterTION
 
