@@ -4,7 +4,10 @@ Two additional branches were created, namely
 coding_without_tdd;
 coding_with_tdd
 
-Initial attempt to write the applications was done without reference to Test Driven Development
+Initial attempt to write the applications was done without reference to Test Driven Development using the branch, "coding_without_tdd", changes were later merged with the master branch and a release version was created.
+
+Switch to the branch, coding_with_tdd
+Creating two Python applications by creating two directories, app/ and test/, each with a blank file, __init__.py
 
 
 Kindly check the two log files(test_log.txt and weather_testlog.txt ) to view  nosetests log after each iterTION
