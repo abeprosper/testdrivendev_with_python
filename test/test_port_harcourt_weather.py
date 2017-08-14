@@ -34,3 +34,11 @@ class TddSmallestTemperatureSpread(unittest.TestCase):
 		dailyTempSpread = list(dailyTempSpread) # I have a tuple here, i.e multiple return items
 		self.assertIsInstance(dailyTempSpread, list)
 		pass
+
+
+	def test__return_error_if_resultfile_iteration_can_not_produce_python_dictionary_of_day_and_temp_spread(self):
+		inputFilename = SmallestTemperatureSpread()
+		dailyList, dailyTempSpread, weatherDict = inputFilename.weatherLists('port-harcourt-weather.txt')
+		weatherDict = dict(weatherDict) # I have a tuple here, i.e multiple return items
+		self.assertIsInstance(weatherDict, dict)
+		pass
